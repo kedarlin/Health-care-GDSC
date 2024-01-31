@@ -1,7 +1,8 @@
 .PatientSideBar-container{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    padding-top: 20vh;
+    width: 300px;
     background-color: #00788d36;
     height: 100vh;
     position: fixed;
@@ -10,10 +11,11 @@
 }
 .patient-personal{
     text-align: center;
-    margin-left: 30px;
-    margin-top: 30px;
+    padding-top: 30px;
     border-bottom: #0000006b solid 3px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     cursor: pointer;
-    width: 70%;
 }
+.patient-personal:last-child {
+    border-bottom: none;
+  }
