@@ -10,6 +10,7 @@ const Home = () => {
             <div className="home-about">
                 <h3>KISHORE</h3>
             </div>
+            <button className="home-about" >Home</button>
         </div>
     )
 }

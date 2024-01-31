@@ -1,0 +1,18 @@
+.patient-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .sidebar-container {
+    flex: 0 0 auto;
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
