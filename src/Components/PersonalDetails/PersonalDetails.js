@@ -4,7 +4,7 @@ import './PersonalDetails.css';
 const PersonalDetails = () => {
 
     const currentDate = new Date().toISOString().split('T')[0];
-    
+
     const [formData, setFormData] = useState({
         name: '',
         gender: '',
@@ -55,6 +55,7 @@ const PersonalDetails = () => {
 
     return (
         <div className='personal-details-container'>
+            <div className='personal-details-head'>Enter Your Details</div>
             <form onSubmit={handleSubmit}>
                 <label>
                     Name:
@@ -105,9 +106,9 @@ const PersonalDetails = () => {
                     <input type='text' name='bloodGroup' value={formData.bloodGroup} onChange={handleChange} required />
                 </label>
                 <br />
+                <>Medical History:</>
                 <div className='medical-history'>
                     <label>
-                        Medical History:
                         <div className='medical-history-item'>
                             <label>
                                 <input
