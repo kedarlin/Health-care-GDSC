@@ -1,0 +1,57 @@
+.patient-appointment-container {
+    max-width: 600px;
+    margin: 60px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-appointment-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.patient-appointment-category,
+.patient-appointment-reason,
+.patient-appointment-doctor,
+.patient-appointment-preferred-date,
+.patient-appointment-preferred-time {
+    margin-bottom: 15px;
+}
+
+.patient-appointment-category label,
+.patient-appointment-reason label,
+.patient-appointment-doctor label,
+.patient-appointment-preferred-date label,
+.patient-appointment-preferred-time label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.patient-appointment-category input,
+.patient-appointment-reason textarea,
+.patient-appointment-doctor select,
+.patient-appointment-preferred-date input,
+.patient-appointment-preferred-time input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.patient-appointment-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.patient-appointment-container button:hover {
+    background-color: #45a049;
+}
