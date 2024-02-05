@@ -7,7 +7,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handlePatientLogin = () => {
-        navigate('/patient-dashboard');
+        navigate('/register');
     };
 
     const handleDoctorLogin = () => {
