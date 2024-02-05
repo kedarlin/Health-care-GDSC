@@ -7,7 +7,9 @@
 
 .patient-dash-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     position: relative;
 }
@@ -57,6 +59,24 @@
 }
 
 .patient-dash-book-button:hover {
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+.patient-dash-logout-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.patient-dash-logout-button:hover {
     color: #000;
     background-color: rgb(255, 255, 255);
 }

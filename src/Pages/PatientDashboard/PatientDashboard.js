@@ -2,7 +2,7 @@ import React from 'react'
 import './PatientDashboard.css';
 import Header from '../../Components/Header/Header';
 import { useNavigate } from 'react-router-dom';
-
+import { getAuth, signOut } from 'firebase/auth';
 
 const PatientDashboard = () => {
 
@@ -11,8 +11,15 @@ const PatientDashboard = () => {
     const handleBookAppointment = () =>{
         navigate('/Patient');
     }
-
-
+    const handleLogout = async () => {
+        try {
+            const auth = getAuth();
+            await signOut(auth);
+            navigate('/login');
+        } catch (error) {
+            console.error('Logout failed', error.message);
+        }
+    }
     return (
         <div className='patient-dash-container'>
             <Header />
@@ -23,6 +30,7 @@ const PatientDashboard = () => {
                     <div className='patient-dash-book-desc'>Can't reach Doctors right away?<br />Book an Appointment from Your Home<br />And Consult Doctors Online!</div>
                     <button className='patient-dash-book-button' onClick={handleBookAppointment}>BOOK</button>
                 </div>
+                <button className='patient-dash-logout-button' onClick={handleLogout}>Logout</button>
             </div>
         </div>
     );
